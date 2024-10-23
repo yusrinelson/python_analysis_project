@@ -37,7 +37,7 @@ total_win_percentage = [home_win_percentage, away_win_percentage, draw_percentag
 
 #creating a bar plot for total home and away wins
 plt.figure(figsize=(8, 5))
-sns.barplot(x=name, y=total_win_percentage, palette="viridis")
+sns.barplot(x=name, y=total_win_percentage, palette="viridis" ,hue=name , legend=False)
 plt.title("Home vs Away Win Percentage in Premier League 2021-2022")
 plt.ylabel("Win Percentage (%)")
 plt.ylim(0, 100)
